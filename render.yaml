@@ -29,7 +29,7 @@ services:
         sync: false
 
   # Frontend Client (React + Vite SPA)
-  - type: static
+  - type: web
     name: crisisguard-frontend
     rootDir: client
     buildCommand: npm install && npm run build
