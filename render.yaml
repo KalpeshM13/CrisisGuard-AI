@@ -31,6 +31,7 @@ services:
   # Frontend Client (React + Vite SPA)
   - type: web
     name: crisisguard-frontend
+    runtime: static
     rootDir: client
     buildCommand: npm install && npm run build
     staticPublishPath: dist
