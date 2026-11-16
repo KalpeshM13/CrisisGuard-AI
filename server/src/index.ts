@@ -26,7 +26,8 @@ const app: Express = express();
 const allowedOrigins = [
   'http://localhost:5173',
   'https://crisisguard.vercel.app',
-];
+  process.env.CLIENT_URL,
+].filter(Boolean) as string[];
 
 app.use(
   cors({
@@ -34,10 +35,11 @@ app.use(
       // Allow Postman, curl, mobile apps
       if (!origin) return callback(null, true);
 
-      // Allow localhost + main prod + all Vercel previews
+      // Allow localhost + main prod + all Vercel & Render deployments
       if (
         allowedOrigins.includes(origin) ||
-        origin.endsWith('.vercel.app')
+        origin.endsWith('.vercel.app') ||
+        origin.endsWith('.onrender.com')
       ) {
         return callback(null, true);
       }
