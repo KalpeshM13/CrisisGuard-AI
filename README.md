@@ -139,4 +139,4 @@ crisisguard-ai/
 
 ## License
 
-MIT
+This project is licensed under the [MIT License](LICENSE). See the [LICENSE](LICENSE) file for the full license text. Developed for university campus operations, educational governance research, and competitive hackathon evaluation.
