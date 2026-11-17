@@ -1,58 +1,22 @@
-# CrisisGuard AI
+# 🛡️ CrisisGuard AI — Emergency Response & Disaster Management System
 
-An AI-powered emergency response system that helps users prepare for, respond to, and recover from disasters.
+> An intelligent, full-stack disaster management and emergency triage platform designed to bridge critical information gaps during crises with real-time hazard forecasting, rapid SOS dispatch, and instant first-responder medical access.
 
-## Features
+---
 
-### 1. Live Dashboard
-- Real-time weather conditions
-- Air Quality Index (AQI) monitoring
-- Current location tracking
+### 🌟 Key Highlights
+- 🤖 **Hyperlocal AI Threat Assessment:** Ingests live telemetry (temperature, wind, AQI via OpenWeatherMap) to generate micro-localized hazard predictions and contingency protocols using LLM inference (Llama 3.2 / Groq).
+- 🆘 **One-Touch SOS Broadcasting:** Instant telemetry capture and multi-channel distress dispatch via transactional email alerts with pinpoint GPS coordinates.
+- 🗺️ **Live Emergency GIS Routing:** Interactive spatial maps (Leaflet + OpenStreetMap) dynamically plotting trauma centers, fire stations, pharmacies, and emergency shelters with distance calculations.
+- 🏥 **Scannable Medical Emergency ID:** Encrypted digital medical vault with tokenized, time-delimited QR codes for field paramedics to inspect blood group, allergies, and emergency contacts during triage.
+- 📖 **Crisis Survival Guides:** Offline-ready, step-by-step contingency protocols for earthquakes, floods, fires, cyclones, and tsunamis.
 
-### 2. Emergency Services Map
-- Interactive map showing nearby:
-  - Hospitals & Clinics
-  - Police Stations
-  - Fire Stations
-  - Pharmacies
-  - Emergency Shelters
-- Distance calculation and directions
-
-### 3. Disaster Prediction
-- AI-powered risk assessment
-- Analysis based on:
-  - Geographic location
-  - Current weather patterns
-  - Historical disaster data
-- Specific threat alerts
-
-### 4. Medical Emergency ID
-- Personal medical profile
-- Blood type, allergies, conditions
-- Medication list
-- Emergency contact information
-- Document upload (prescriptions, insurance)
-- Shareable QR code for rescuers
-
-### 5. Disaster Guides
-- Step-by-step instructions for:
-  - Earthquake
-  - Flood
-  - Fire
-  - Hurricane
-  - Tornado
-  - Tsunami
-
-## Tech Stack
-
-| Component | Technology |
-|-----------|------------|
-| Frontend | React + TypeScript + Vite |
-| Backend | Node.js + Express |
-| Database | MongoDB Atlas |
-| Maps | OpenStreetMap + Leaflet |
-| Weather | OpenWeatherMap API |
-| AI | Ollama (Local) |
+### 🛠️ Tech Stack
+- **Frontend:** React 18, TypeScript, Vite, Tailwind CSS, Lucide Icons, Framer Motion
+- **Backend:** Node.js, Express.js, TypeScript, REST Architecture
+- **Database:** MongoDB Atlas (Mongoose ODM, TTL indexing)
+- **AI & GIS:** Ollama (Llama 3.2) / Groq Cloud SDK, OpenStreetMap, Overpass API, Leaflet
+- **External Services:** OpenWeatherMap API, Brevo Transactional Email API
 
 ## Getting Started
 
